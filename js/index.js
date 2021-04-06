@@ -14,7 +14,7 @@ const header = () => {
   headerContainer.classList.add("ui", "inverted", "segment");
   let nav = document.createElement("nav");
   nav.classList.add("ui", "inverted", "secondary", "menu");
-  let tabs = ["My Portfolio", "About Me", "My Projects"];
+  let tabs = ["My Portfolio", "About Me", "My Projects", "Contact Me"];
   tabs.forEach((tab) => {
     let tabLink = document.createElement("a");
     tabLink.classList.add("item");
@@ -35,6 +35,8 @@ const startPage = async (tab) => {
       "<h2>About Me</h2> <p>Welcome to my portfolio, here you will be able to see my portfolio </p>";
   } else if (tab === "My Projects") {
     await displayProjects();
+  } else if (tab === "Contact Me") {
+    await displayCntacts(); //mainContainer.innerHTML = "<h2>Contact Me</h2> <p>e-mail</p>";
   } else {
     mainContainer.innerHTML = "<h2>Hallo World</h2>";
   }
@@ -64,6 +66,34 @@ const displayProjects = async () => {
     projectsContainer.appendChild(card);
   });
   mainContainer.appendChild(projectsContainer);
+};
+
+const displayCntacts = async () => {
+  let response = await (await fetch("./js/contacts.json")).json();
+  let contacts = response.contacts;
+  mainContainer.innerHTML = "";
+  const contactsContainer = document.createElement("div");
+  contactsContainer.classList.add("ui", "cards");
+  contacts.forEach((contact) => {
+    let card = document.createElement("div");
+    let linkedin = document.createElement("div");
+    let number = document.createElement("div");
+    let image = document.createElement("div");
+    let cardContent = document.createElement("div");
+    let cardDescription = document.createElement("div");
+    card.classList.add("ui", "card");
+    image.classList.add("image");
+    image.innerHTML = `<img src=${contact.image}/>`;
+    linkedin.classList.add("linkedin");
+    linkedin.innerHTML = `<a class='header'>${contact.linkedin}</a>`;
+    cardContent.classList.add("content");
+    cardContent.innerHTML = `<a class='header'>${contact.email} </a>`;
+    number.classList.add("number");
+    number.innerHTML = `<a class='header'>${contact.number}</a>`;
+    card.append(image, linkedin, cardContent, number);
+    contactsContainer.appendChild(card);
+  });
+  mainContainer.appendChild(contactsContainer);
 };
 
 const footer = () => {

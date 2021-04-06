@@ -1,22 +1,22 @@
 {
-    "projects": [
-        {
-            "id": 1,
-            "title": "This is my first website",
-            "description": "It is made with HTML, CSS and JS",
-            "image": "https://images.unsplash.com/photo-1514070706115-47c142769603?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nzl8fGNvZGV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-        },
-        {
-            "id": 2,
-            "title": "The ATM challange",
-            "description": "It is made with Ruby",
-            "image": "https://images.unsplash.com/photo-1514070706115-47c142769603?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nzl8fGNvZGV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-        },
-        {
-            "id": 3,
-            "title": "FizzBuzz",
-            "description": "It is made with Ruby",
-            "image": "https://images.unsplash.com/photo-1514070706115-47c142769603?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nzl8fGNvZGV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-        }
-    ]
+  "projects": [
+    {
+      "id": 1,
+      "title": "This is my first website",
+      "description": "It is made with HTML, CSS and JS",
+      "image": "https://images.unsplash.com/photo-1514070706115-47c142769603?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nzl8fGNvZGV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+      "id": 2,
+      "title": "The ATM challange",
+      "description": "It is made with Ruby",
+      "image": "https://images.unsplash.com/photo-1514070706115-47c142769603?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nzl8fGNvZGV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+      "id": 3,
+      "title": "FizzBuzz",
+      "description": "It is made with Ruby",
+      "image": "https://images.unsplash.com/photo-1514070706115-47c142769603?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nzl8fGNvZGV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    }
+  ]
 }
